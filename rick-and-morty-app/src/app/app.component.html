@@ -1,18 +1,20 @@
-<header class="text-center my-5">
-	<h1>Rick and Morty</h1>
-	<p>Characters</p>
+<header class="text-center bg-dark">
+	<h1>
+		<img src="../assets/multimedia/tittle-ram.png" class="header-img" alt="rick and morty" />
+	</h1>
+	<p class="bg-warning p-4 m-0">Characters</p>
 </header>
-<main class="d-flex flex-wrap gap-5 justify-content-center">
+<main class="d-flex flex-wrap gap-5 justify-content-center p-4">
 	@for (elemento of todosLosDatos; track elemento.id) {
 	<div class="card" style="border-radius: 50px">
 		<img src="{{ elemento.image }}" class="card-img-top" style="border-radius: 50px" alt="foto de {{ elemento.title }}" />
 		<div class="card-body">
 			<h5 class="card-title text-center">{{ elemento.name }}</h5>
-			<p class="card-text text-center">{{ elemento.gender }} - {{ elemento.species }}</p>
+			<p class="card-text text-center">{{ elemento.gender }} - {{ elemento.species }} - {{ elemento.status }}</p>
 			<p class="card-text text-center">{{ elemento.location.name }}</p>
 		</div>
 	</div>
 	}
 </main>
-<footer class="text-center my-5">&copy; 2024</footer>
+<footer class="text-center py-5 bg-warning">&copy; 2024</footer>
 <!-- <router-outlet></router-outlet> -->
