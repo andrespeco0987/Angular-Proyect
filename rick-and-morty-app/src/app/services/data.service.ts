@@ -11,11 +11,15 @@ export class DataService {
 
 	//* lineas agregadas
 	//* url de mi api
-	API_URL: string = "https://rickandmortyapi.com/api/character";
+	API_URL_1: string = "https://rickandmortyapi.com/api/character";
+	API_URL_2: string = "https://rickandmortyapi.com/api/character?page=2";
 
 	httpClient = inject(HttpClient);
 
-	obtenerDatos() {
-		return this.httpClient.get(this.API_URL);
+	obtenerDatos1() {
+		return this.httpClient.get(this.API_URL_1);
+	}
+	obtenerDatos2() {
+		return this.httpClient.get(this.API_URL_2);
 	}
 }

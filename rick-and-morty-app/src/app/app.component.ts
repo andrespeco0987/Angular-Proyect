@@ -17,12 +17,22 @@ export class AppComponent {
 	dataService = inject(DataService);
 
 	todosLosDatos: any[] = [];
+	todosLosDatos2: any[] = [];
 
 	obtenerTodosLosDatos() {
-		this.dataService.obtenerDatos().subscribe((respuesta: any) => {
+		this.dataService.obtenerDatos1().subscribe((respuesta: any) => {
 			console.log("respuesta: ", respuesta);
 			if (respuesta.results) {
 				this.todosLosDatos = respuesta.results;
+				console.log("bien");
+			} else {
+				console.log("Error");
+			}
+		});
+		this.dataService.obtenerDatos2().subscribe((respuesta: any) => {
+			console.log("respuesta: ", respuesta);
+			if (respuesta.results) {
+				this.todosLosDatos2 = respuesta.results;
 				console.log("bien");
 			} else {
 				console.log("Error");
