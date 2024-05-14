@@ -30,102 +30,69 @@ export class AppComponent {
 
 	obtenerTodosLosDatos() {
 		this.dataService.obtenerDatos1().subscribe((respuesta: any) => {
-			console.log("respuesta: ", respuesta);
 			if (respuesta.results) {
 				this.todosLosDatos = respuesta.results;
-				console.log("bien");
 			} else {
-				console.log("Error");
 			}
 		});
 		this.dataService.obtenerDatos2().subscribe((respuesta: any) => {
-			console.log("respuesta: ", respuesta);
 			if (respuesta.results) {
 				this.todosLosDatos2 = respuesta.results;
-				console.log("bien");
 			} else {
-				console.log("Error");
 			}
 		});
 		this.dataService.obtenerDatos3().subscribe((respuesta: any) => {
-			console.log("respuesta: ", respuesta);
 			if (respuesta.results) {
 				this.todosLosDatos3 = respuesta.results;
-				console.log("bien");
 			} else {
-				console.log("Error");
 			}
 		});
 		this.dataService.obtenerDatos4().subscribe((respuesta: any) => {
-			console.log("respuesta: ", respuesta);
 			if (respuesta.results) {
 				this.todosLosDatos4 = respuesta.results;
-				console.log("bien");
 			} else {
-				console.log("Error");
 			}
 		});
 		this.dataService.obtenerDatos5().subscribe((respuesta: any) => {
-			console.log("respuesta: ", respuesta);
 			if (respuesta.results) {
 				this.todosLosDatos5 = respuesta.results;
-				console.log("bien");
 			} else {
-				console.log("Error");
 			}
 		});
 		this.dataService.obtenerDatos6().subscribe((respuesta: any) => {
-			console.log("respuesta: ", respuesta);
 			if (respuesta.results) {
 				this.todosLosDatos6 = respuesta.results;
-				console.log("bien");
 			} else {
-				console.log("Error");
 			}
 		});
 		this.dataService.obtenerDatos7().subscribe((respuesta: any) => {
-			console.log("respuesta: ", respuesta);
 			if (respuesta.results) {
 				this.todosLosDatos7 = respuesta.results;
-				console.log("bien");
 			} else {
-				console.log("Error");
 			}
 		});
 		this.dataService.obtenerDatos8().subscribe((respuesta: any) => {
-			console.log("respuesta: ", respuesta);
 			if (respuesta.results) {
 				this.todosLosDatos8 = respuesta.results;
-				console.log("bien");
 			} else {
-				console.log("Error");
 			}
 		});
 		this.dataService.obtenerDatos9().subscribe((respuesta: any) => {
-			console.log("respuesta: ", respuesta);
 			if (respuesta.results) {
 				this.todosLosDatos9 = respuesta.results;
-				console.log("bien");
 			} else {
-				console.log("Error");
 			}
 		});
 		this.dataService.obtenerDatos10().subscribe((respuesta: any) => {
-			console.log("respuesta: ", respuesta);
 			if (respuesta.results) {
 				this.todosLosDatos10 = respuesta.results;
-				console.log("bien");
 			} else {
-				console.log("Error");
 			}
 		});
 		this.dataService.obtenerDatos11().subscribe((respuesta: any) => {
-			console.log("respuesta: ", respuesta);
 			if (respuesta.results) {
 				this.todosLosDatos11 = respuesta.results;
-				console.log("bien");
 			} else {
-				console.log("Error");
 			}
 		});
 	}
