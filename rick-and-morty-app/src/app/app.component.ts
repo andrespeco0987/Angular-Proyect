@@ -23,6 +23,10 @@ export class AppComponent {
 	todosLosDatos5: any[] = [];
 	todosLosDatos6: any[] = [];
 	todosLosDatos7: any[] = [];
+	todosLosDatos8: any[] = [];
+	todosLosDatos9: any[] = [];
+	todosLosDatos10: any[] = [];
+	todosLosDatos11: any[] = [];
 
 	obtenerTodosLosDatos() {
 		this.dataService.obtenerDatos1().subscribe((respuesta: any) => {
@@ -83,6 +87,42 @@ export class AppComponent {
 			console.log("respuesta: ", respuesta);
 			if (respuesta.results) {
 				this.todosLosDatos7 = respuesta.results;
+				console.log("bien");
+			} else {
+				console.log("Error");
+			}
+		});
+		this.dataService.obtenerDatos8().subscribe((respuesta: any) => {
+			console.log("respuesta: ", respuesta);
+			if (respuesta.results) {
+				this.todosLosDatos8 = respuesta.results;
+				console.log("bien");
+			} else {
+				console.log("Error");
+			}
+		});
+		this.dataService.obtenerDatos9().subscribe((respuesta: any) => {
+			console.log("respuesta: ", respuesta);
+			if (respuesta.results) {
+				this.todosLosDatos9 = respuesta.results;
+				console.log("bien");
+			} else {
+				console.log("Error");
+			}
+		});
+		this.dataService.obtenerDatos10().subscribe((respuesta: any) => {
+			console.log("respuesta: ", respuesta);
+			if (respuesta.results) {
+				this.todosLosDatos10 = respuesta.results;
+				console.log("bien");
+			} else {
+				console.log("Error");
+			}
+		});
+		this.dataService.obtenerDatos11().subscribe((respuesta: any) => {
+			console.log("respuesta: ", respuesta);
+			if (respuesta.results) {
+				this.todosLosDatos11 = respuesta.results;
 				console.log("bien");
 			} else {
 				console.log("Error");
